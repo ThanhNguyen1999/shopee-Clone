@@ -20,7 +20,7 @@
 				<div class="grid">
 					<nav class="header__navbar">
 						<ul class="header__navbar-list">
-              <li class="header__navbar-item header__navbar-item--qr border-space">
+              <li class="header__navbar-item border-space">
                   Kênh nguòi bán
               </li>
 							<li class="header__navbar-item header__navbar-item--qr border-space">
@@ -84,7 +84,7 @@
                         </li>
                       </ul>
                       <div class="header__notify-viewall">
-                        <a href="  " class="header__notify-viewall-btn">Xem Tất cả</a>
+                        <a href=" " class="header__notify-viewall-btn">Xem Tất cả</a>
                       </div>
 
                     </div>
@@ -96,10 +96,27 @@
                   <i class=" header__navbar-icon far fa-question-circle"></i>
                   Trợ giúp</a>
 							</li>
-							<li class="header__navbar-item item-strong border-space"
-								>Đăng Ký</li
-							>
-							<li class="header__navbar-item item-strong">Đăng Nhập</li>
+							<!-- <li class="header__navbar-item item-strong border-space"
+								>Đăng Ký</li>
+							<li class="header__navbar-item item-strong">Đăng Nhập</li> -->
+                <li class="header__navbar-item header__navbar-user">
+                  <img src="./assets/img/avatar.gif" alt="" class="header__navbar-user-img">
+                  <span class="header__navbar-user-name">Thanh Nguyen</span>
+                  <ul class="header__navbar-user-menu">
+                    <li class="header__navbar-user-item">
+                      <a href="">Tài khoản của tôi</a>
+                    </li>
+                     <li class="header__navbar-user-item">
+                      <a href="">Địa chỉ của tôi</a>
+                    </li>
+                     <li class="header__navbar-user-item">
+                      <a href="">Đơn mua</a>
+                    </li>
+                     <li class="header__navbar-user-item">
+                      <a href="">Đăng xuất</a>
+                    </li>
+                  </ul>
+                </li>
 						</ul>
 					</nav>
 
@@ -115,12 +132,25 @@
               </div>
 
               <div class="header_search">
-                  <input type="text" class="header_search-input" placeholder="Tìm sản phẩm, thương hiệu và tên shop">
+                  <div class="header_search-wrap"> 
+                    <input type="text" class="header_search-input" placeholder="Tìm sản phẩm, thương hiệu và tên shop">
+                    <div class="header__search-history">
+                      <div class="header__search-history-heading">Lịch sử tìm kiếm</div>
+                        <ul class="header__search-history-list">
+                          <li class="header__search-history-item">
+                              <a href="">Laptop gaming</a>
+                          </li>
+                          <li class="header__search-history-item">
+                              <a href="">Fan case 120</a>
+                          </li>
+                        </ul>
+                    </div>
+                </div>
                   <div class="header_search-select">
-                      <span class="header_search-seclec-label">
+                      <span class="header_search-select-label">
                         Trong Shop
                       </span>
-                      <i class="header_search-seclec-icon far fa-chevron-down"></i>
+                      <i class="header_search-select-icon far fa-chevron-down"></i>
 
                       <ul class="header_search-option">
                         <li class="header_search-option-item header_search-option-item--active">
@@ -133,14 +163,87 @@
                         </li>
                       </ul>
                   </div>
-                  <button class="header_seatch-btn">
-                    <i class="header_seatch-btn-icon far fa-search"></i>
+                  <button class="header_search-btn">
+                    <i class="header_search-btn-icon far fa-search"></i>
                   </button>
               </div>
 
-              <div class="header_cart">
-                  <i class="header_cart-icon fal fa-shopping-cart"></i>
-              </div>
+              <div class="header__cart">
+                <div class="header__cart-wrap">
+                      <i class="header__cart-icon fal fa-shopping-cart"></i>
+                      <span class="header__cart-notice">3</span>
+
+                      <div class="header__cart-list ">
+                    <!-- No Cart: header__cart-list--no-cart  -->
+                      <img src="./assets/img/no_cart.png" alt="" class="header__cart-list--no-cart-img">
+                      <p class="header__cart-list--no-cart-msg">
+                        Chưa có sản phẩm
+                      </p>
+                      <h4 class="header__cart-heading">Sản phẩm đã thêm</h4>
+                      <!-- Have item in cart -->
+                      <ul class="header__cart-list-item">
+                          <li class="header__cart-item">
+                              <img src="./assets/img/sp/rog-phone-5_800x450.jpg" alt="" class="header__cart-item-img">
+                                <div class="header__cart-item-info">
+                                  <div class="header__cart-item-head">
+                                     <h5 class="header__cart-item-name">Asus ROG Phone 5</h5>
+                                     <div class="header__cart-item-price-wrap">
+                                       <span class="header__cart-item-price">20.000.000đ</span>
+                                     <span class="header__cart-item-multi">x</span>
+                                     <span class="header__cart-item-quantity">2</span>
+                                     </div>
+                                  </div>
+                                    <div class="header__cart-item-body">
+                                      <span class="header__cart-item-description">
+                                        Phân loại hàng: Điện thoại
+                                      </span>
+                                      <span class="header__cart-item-remove">Xoá</span>
+                                    </div>
+                                </div>
+                          </li>
+                          <li class="header__cart-item">
+                              <img src="./assets/img/sp/rog-phone-5_800x450.jpg" alt="" class="header__cart-item-img">
+                                <div class="header__cart-item-info">
+                                  <div class="header__cart-item-head">
+                                     <h5 class="header__cart-item-name">Asus ROG Phone 5</h5>
+                                     <div class="header__cart-item-price-wrap">
+                                       <span class="header__cart-item-price">20.000.000đ</span>
+                                     <span class="header__cart-item-multi">x</span>
+                                     <span class="header__cart-item-quantity">2</span>
+                                     </div>
+                                  </div>
+                                    <div class="header__cart-item-body">
+                                      <span class="header__cart-item-description">
+                                        Phân loại hàng: Điện thoại
+                                      </span>
+                                      <span class="header__cart-item-remove">Xoá</span>
+                                    </div>
+                                </div>
+                          </li>
+                          <li class="header__cart-item">
+                              <img src="./assets/img/sp/rog-phone-5_800x450.jpg" alt="" class="header__cart-item-img">
+                                <div class="header__cart-item-info">
+                                  <div class="header__cart-item-head">
+                                     <h5 class="header__cart-item-name">Asus ROG Phone 5</h5>
+                                     <div class="header__cart-item-price-wrap">
+                                       <span class="header__cart-item-price">20.000.000đ</span>
+                                     <span class="header__cart-item-multi">x</span>
+                                     <span class="header__cart-item-quantity">2</span>
+                                     </div>
+                                  </div>
+                                    <div class="header__cart-item-body">
+                                      <span class="header__cart-item-description">
+                                        Phân loại hàng: Điện thoại
+                                      </span>
+                                      <span class="header__cart-item-remove">Xoá</span>
+                                    </div>
+                                </div>
+                          </li>
+                      </ul>
+                      <a href="#" class="header__cart-view-cart btn btn--primary">Xem giỏ hàng</a>
+                  </div>
+                </div>
+                  
           </div>
 				</div>
 			</header>
